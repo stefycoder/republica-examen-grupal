@@ -1,0 +1,70 @@
+doctype html
+html(lang='es-PE')
+		head
+			meta(charset='UTF-8')
+			block pagina
+				title Home
+			link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+			link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+			link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+			link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+			link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+			link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+			link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+			link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+		mixin navegador(url,texto)
+			li
+				a(href=url) #{texto}
+		mixin iconos(clase)
+			li
+				a(href="" class=clase)
+		body
+			.navbar.navbar-default
+				.container.publi
+					.row.text-center
+						.banner-top
+						.navbar-nav
+							a.navbar-brand(href='#') LIBERO.PE
+							a.navbar-brand(href='#') ELPOPULAR.PE
+							a.navbar-brand(href='#') FUNDACIÓN GUSTAVO MOHME LLONA
+						.navbar-collapse
+							ul.nav.navbar-nav.navbar-right
+								li
+									span SUSCRÍBETE AL BOLETÍN
+								+iconos('fa fa-facebook')
+								+iconos('fa fa-twitter')
+								+iconos('fa fa-google-plus')
+								li
+									a(href="")
+										img(src="./assets/image/sprites/ico-email.png", alt="")
+								+iconos('fa fa-rss')
+								button.subs.btn-default(type="btn-default") BUSCAR
+			section#centro
+				.col-sm-2
+					.banner-left
+				.col-sm-12
+					block contenido
+					.container
+						//  The justified navigation menu is meant for single line per list item.   Multiple lines will require custom code not provided by Bootstrap.
+						nav
+								ul.nav.nav-justified
+									+navegador("#", "POLÍTICA")
+									+navegador("#", "ECONOMÍA")
+									+navegador("#", "SOCIEDAD")
+									+navegador("#", "ELECC. REGIONALES")
+									+navegador("#", "DEPORTES")
+									+navegador("#", "CHAMPIONS L.")
+									+navegador("#", "ESPECTÁCULOS")
+									+navegador("#", "ED.IMPRESA")
+									+navegador("#", "REGIONALES")
+									+navegador("#", "MÁS SECCIONES")
+				.col-sm-2
+					.banner-right
+
+			script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+			script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+			script(type='text/javascript', src='js/bootstrap.min.js')
+			script(type='text/javascript', src='js/slick.min.js')
+			script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+			script(type='text/javascript', src='js/modernizr.custom.68172.js')
+			script(type='text/javascript', src='js/respond.js')

@@ -1,0 +1,75 @@
+.estimg{
+	background:url(../../assets/image/banner_top.jpg)no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100px;
+	margin-top:1%;
+}
+.estiloa{
+	font-size: 10px;
+	padding-top: 0px;
+	padding-left: 5px;
+	display: inline;
+}
+$alto:580px;
+$size:100%;
+.colores{
+	font-size: 1em;
+}
+.publi{
+	.banner-top{
+		@extend .estimg;
+		margin-bottom: 20px;
+	}
+}
+.navbar{
+	.navbar-brand{
+		@extend .estiloa;
+	}
+	.navbar-nav{
+		li{
+			span{
+				font-size: 8px;
+				padding:4% 2px;
+				background:#DD4A4A;
+				color:white;
+				border-radius:4px;
+			}
+			.fa-facebook{
+				color:#2A65A1;
+			}
+			.fa-twitter{
+				color:#4BB7D9;
+			}
+			.fa-google-plus{
+				color:#CA4739;
+			}
+			.fa-rss{
+				color:#FF8000;
+			}
+			a{
+				@extend .estiloa;
+				@extend .colores;
+				img{
+					height:15px;
+				}
+			}
+		}
+		.subs{
+			font-size: 10px;
+		}
+	}
+}
+#centro{
+	.banner-left{
+		@extend .estimg;
+		background:url(../../assets/image/publicidad1.png)no-repeat;
+		background-size: $size;
+		height: $alto;
+	}
+	.banner-right{
+		background:url(../../assets/image/publicidad2.png)no-repeat;
+		background-size: $size;
+		height: $alto;
+	}
+}
