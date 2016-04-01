@@ -1,0 +1,93 @@
+doctype html
+html(lang='es-PE')
+  head
+    meta(charset='UTF-8')
+    title Home
+    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+    script(type='text/javascript', src='js/bootstrap.min.js')
+    script(type='text/javascript', src='js/slick.min.js')
+    script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+    script(type='text/javascript', src='js/modernizr.custom.68172.js')
+    script(type='text/javascript', src='js/respond.js')
+  body
+    //-escribe tu código html aquí  
+    //-estilo titulo
+    mixin title-blog-column(title)
+        h1=title
+    mixin subtitle-blog-column(subtitle)
+        h4=subtitle
+        i.fa.fa-angle-double-down
+    //-estilo-cuadrito
+    mixin cuadro-blog(title,src,name)
+        div.blog
+            h6 Lunes, 14 de julio de 2015
+            div.title-blog
+                h3=title
+            div.blog-box
+                img(src=src, alt="imagen blog")
+                h5 BLOG
+                h4=name
+
+
+    section#blogs
+        div.container
+            div.row
+                +title-blog-column('Blogs')
+                +subtitle-blog-column('LO ÚLTIMO EN BLOGS')
+            div.row
+                div.col-md-4
+                    +cuadro-blog('El gol de la muerte','assets/image/blog_avatar_01.jpg','LIBROS')
+                div.col-md-4.middle
+                    +cuadro-blog('Dios ha muerto...tengo las manos cubiertas de sangre','assets/image/blog_avatar_02.jpg','Ya lo pasado, PASADO')
+                div.col-md-4
+                    +cuadro-blog('¿Cuál es tu queso favorito?','assets/image/blog_avatar_03.jpg','Décimas cosas')
+            div.row
+                div.col-md-4
+                    +cuadro-blog('El gol de la muerte','assets/image/blog_avatar_01.jpg','Y tú...¿Ya hiciste click?')
+                div.col-md-4.middle
+                    +cuadro-blog('Dios ha muerto...tengo las manos cubiertas de sangre','assets/image/blog_avatar_02.jpg','Educando con Amor Firme')
+                div.col-md-4
+                    +cuadro-blog('¿Cuál es tu queso favorito?','assets/image/blog_avatar_03.jpg','Moda Ente Tendente')
+            div.row
+                div.col-md-4
+                    +cuadro-blog('El gol de la muerte','assets/image/blog_avatar_01.jpg','LIBROS')
+                div.col-md-4.middle
+                    +cuadro-blog('Dios ha muerto...tengo las manos cubiertas de sangre','assets/image/blog_avatar_02.jpg','Ya lo pasado, PASADO')
+                div.col-md-4
+                    +cuadro-blog('¿Cuál es tu queso favorito?','assets/image/blog_avatar_03.jpg','Décimas cosas')
+            div.row
+                div.col-md-4
+                    +cuadro-blog('El gol de la muerte','assets/image/blog_avatar_01.jpg','LIBROS')
+                div.col-md-4.middle
+                    +cuadro-blog('Dios ha muerto...tengo las manos cubiertas de sangre','assets/image/blog_avatar_02.jpg','Ya lo pasado, PASADO')
+                div.col-md-4
+                    +cuadro-blog('¿Cuál es tu queso favorito?','assets/image/blog_avatar_03.jpg','Décimas cosas')
+            div.row
+                div.col-md-4
+                    +cuadro-blog('El gol de la muerte','assets/image/blog_avatar_01.jpg','LIBROS')
+                div.col-md-4.middle
+                    +cuadro-blog('Dios ha muerto...tengo las manos cubiertas de sangre','assets/image/blog_avatar_02.jpg','Ya lo pasado, PASADO')
+                div.col-md-4
+                    +cuadro-blog('¿Cuál es tu queso favorito?','assets/image/blog_avatar_03.jpg','Décimas cosas')
+            div.row
+                div.col-md-4
+                    +cuadro-blog('El gol de la muerte','assets/image/blog_avatar_01.jpg','LIBROS')
+                div.col-md-4.middle
+                    +cuadro-blog('Dios ha muerto...tengo las manos cubiertas de sangre','assets/image/blog_avatar_02.jpg','Ya lo pasado, PASADO')
+                div.col-md-4
+                    +cuadro-blog('¿Cuál es tu queso favorito?','assets/image/blog_avatar_03.jpg','Décimas cosas')
+            div.row
+                div.col-md-4
+                    +cuadro-blog('El gol de la muerte','assets/image/blog_avatar_01.jpg','LIBROS')
+                div.col-md-4.middle
+                    +cuadro-blog('Dios ha muerto...tengo las manos cubiertas de sangre','assets/image/blog_avatar_02.jpg','Ya lo pasado, PASADO')
+                div.col-md-4
+                    +cuadro-blog('¿Cuál es tu queso favorito?','assets/image/blog_avatar_03.jpg','Décimas cosas')

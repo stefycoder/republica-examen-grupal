@@ -1,0 +1,82 @@
+$title-blog-col: PT Sans;
+$sbtitle-blog-col: Oswald;
+$gris: #768596;
+$gris-claro: #E2E2E2;
+$rojo: #AD210B;
+//mixins
+@mixin title-subtitle-blog-col {
+	h1 {
+		@extend %title-blog-col;
+        font-size: 3em;
+	}
+	h4 {
+		font-family: $sbtitle-blog-col;
+		margin-top: 4%;
+        font-size: 1em;
+        color: $gris;
+	}
+	i {
+		position: relative;
+        left: 140px;
+        top: -30px;
+        font-size: 1.5em;
+        color: $rojo;
+	}
+}
+//placeholders
+%title-blog-col {
+	font-family: $title-blog-col;
+	font-weight: 700;
+}
+%firstpart-blog-column {
+	@include title-subtitle-blog-col;
+	.col-md-4 {
+		width: 33%;
+		.blog {
+			margin-bottom: 5%;
+			padding: 10% 3% 0;
+			border: 2px solid $gris-claro;
+			text-align: center;
+			h6 {
+				font-family: $title-blog-col;
+				margin-bottom: -15px;
+			}
+			h4 {
+				@extend %title-blog-col;
+			}
+			h3 {
+				@extend %title-blog-col;
+				font-size: 1.3em;
+			}
+			h5 {
+				font-family: $sbtitle-blog-col;
+			}
+			.title-blog {
+				margin-bottom: 17%;
+			}
+			.blog-box {
+				background-color: $gris-claro;
+				text-align: left;
+				padding: 5%;
+				margin-bottom: 3%;
+				img {
+					box-shadow: 0px 2px 3px $gris;
+					margin-right: 5%;
+					float: left;
+					border: 2px solid white;
+				}
+			}
+		}
+    }
+    .col-md-4.middle {
+    	.title-blog {
+    		margin-bottom: 9%;
+    	}
+    }
+}
+
+
+
+#blogs {
+    @extend %firstpart-blog-column;
+}
