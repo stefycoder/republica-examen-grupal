@@ -1,0 +1,49 @@
+//Mixins HOME
+mixin headings (h2)
+        .headings
+            h2= h2
+            p Lorem ipsum dolor sit amet consectetur
+    mixin social 
+        .social-box
+            i(class="fa fa-twitter fa-stack")
+            i(class="fa fa-facebook fa-stack")
+            i(class="fa fa-google-plus fa-stack")
+            i(class="fa fa-circle")
+            img(src="assets/image/ico_comment.png", class="comment")
+            a(href="#", class="number") 10
+            i(class="fa fa-circle")
+            a(href="#", class="letter") ESPECTÁCULOS
+            i(class="fa fa-circle")
+            i(class="fa fa-youtube-play")
+    mixin social-2
+        .social-box2
+            i(class="fa fa-twitter fa-stack")
+            i(class="fa fa-facebook fa-stack")
+            i(class="fa fa-google-plus fa-stack")
+            i(class="fa fa-circle")
+            img(src="assets/image/ico_comment.png", class="comment")
+            a(href="#", class="number") 0
+            i(class="fa fa-circle")
+            a(href="#", class="letter") AREQUIPA
+    mixin social-3
+            i(class="fa fa-twitter fa-stack")
+            i(class="fa fa-facebook fa-stack")
+            i(class="fa fa-google-plus fa-stack")
+            i(class="fa fa-circle")
+            img(src="assets/image/ico_comment.png", class="comment")
+            a(href="#", class="number") 10
+            i(class="fa fa-circle")
+            a(href="#", class="letter") ESPECTÁCULOS
+            i(class="fa fa-circle")
+            i(class="fa fa-camera")
+    mixin about-someone (src)
+            img(src=src)
+            p La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.
+    mixin separador (h4)
+        .raya1
+        h4= h4
+    mixin section-blog (h5)
+        .writer-man.clearfix
+            img(src="assets/image/img_blogueros.jpg")
+            a(href="#") Augusto Álvarez Rodrich
+            h5= h5

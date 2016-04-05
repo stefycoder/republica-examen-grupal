@@ -1,0 +1,236 @@
+doctype html
+html(lang='es-PE')
+  head
+    meta(charset='UTF-8')
+    title Home
+    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+    script(type='text/javascript', src='js/bootstrap.min.js')
+    script(type='text/javascript', src='js/slick.min.js')
+    script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+    script(type='text/javascript', src='js/modernizr.custom.68172.js')
+    script(type='text/javascript', src='js/respond.js')
+  body
+    //-escribe tu código html aquí  
+    //-estilo titulo
+    mixin title-blog-column(title)
+        h1=title
+    mixin subtitle-blog-column(subtitle)
+        h4=subtitle
+        i.fa.fa-angle-double-down
+    //-estilo-cuadrito-COLUMNISTA(variacion)
+    mixin cuadro-blog(title,src,autor,name)
+        div.blog
+            h6 Lunes, 14 de julio de 2015
+            div.title-blog
+                h3=title
+            div.blog-box
+                img(src=src, alt="imagen blog")
+                h5=autor
+                h4=name
+    mixin only-blog-box(src,autor,name)
+        div.blog-box
+            img(src=src, alt="imagen blog")
+            h5=autor
+            h4=name
+
+    section#columnistas
+        div.container
+            div.row
+                +title-blog-column('Columnistas')
+                +subtitle-blog-column('LO ÚLTIMO EN COLUMNISTAS')
+            div.row
+                div.col-md-4
+                    +cuadro-blog('El gol de la muerte','assets/image/img_author_columnista.jpg','Augusto Álvarez Rodrich','Claro y Directo')
+                div.col-md-4.middle
+                    +cuadro-blog('Dios ha muerto...tengo las manos cubiertas de sangre','assets/image/img_author_columnista.jpg','Mirko Lauer','Observador')
+                div.col-md-4
+                    +cuadro-blog('¿Cuál es tu queso favorito?','assets/image/img_author_columnista.jpg','Aldo Miyashiro','Chino de mi barrio')
+            div.row
+                div.col-md-4
+                    +cuadro-blog('El gol de la muerte','assets/image/img_author_columnista.jpg','Francisco Durand','Tiro al blanco')
+                div.col-md-4.middle
+                    +cuadro-blog('Dios ha muerto...tengo las manos cubiertas de sangre','assets/image/img_author_columnista.jpg','Humberto Campodónico','Cristal de Mira')
+                div.col-md-4
+                    +cuadro-blog('¿Cuál es tu queso favorito?','assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque perfecto')
+            div.row
+                div.col-md-4
+                    +cuadro-blog('El gol de la muerte','assets/image/img_author_columnista.jpg','Augusto Álvarez Rodrich','Claro y Directo')
+                div.col-md-4.middle
+                    +cuadro-blog('Dios ha muerto...tengo las manos cubiertas de sangre','assets/image/img_author_columnista.jpg','Mirko Lauer','Observador')
+                div.col-md-4
+                    +cuadro-blog('¿Cuál es tu queso favorito?','assets/image/img_author_columnista.jpg','Aldo Miyashiro','Chino de mi barrio')
+            div.row
+                div.col-md-4
+                    +cuadro-blog('El gol de la muerte','assets/image/img_author_columnista.jpg','Francisco Durand','Tiro al blanco')
+                div.col-md-4.middle
+                    +cuadro-blog('Dios ha muerto...tengo las manos cubiertas de sangre','assets/image/img_author_columnista.jpg','Humberto Campodónico','Cristal de Mira')
+                div.col-md-4
+                    +cuadro-blog('¿Cuál es tu queso favorito?','assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque perfecto')
+            div.row
+                div.button-column 
+                    | TODAS LAS COLUMNAS
+            div.row.only-sub
+                +subtitle-blog-column('TODOS LOS COLUMNISTAS')
+            div.row.abc-list
+                div.col-md-offset-1.col-md-1
+                    div.abc-item.main-abc
+                        | TODOS
+                div.col-md-1
+                    div.abc-item
+                        | A B C
+                div.col-md-1
+                    div.abc-item
+                        | D E F 
+                div.col-md-1
+                    div.abc-item
+                        | G H I
+                div.col-md-1
+                    div.abc-item
+                        | J K L
+                div.col-md-1
+                    div.abc-item
+                        | M N O
+                div.col-md-1
+                    div.abc-item
+                        | PQRS
+                div.col-md-1
+                    div.abc-item
+                        | TUV
+                div.col-md-1
+                    div.abc-item
+                        | WXYZ
+            div.row 
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Francisco Durand','Tiro al blanco')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Humberto Campodónico','Cristal de Mira')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque Perpetuo')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque Perpetuo')
+            div.row 
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Francisco Durand','Delito de Opinión')
+                div.col-md-3.alone
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Humberto Campodónico','Actualidad Económica - Oscar Dancourt')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Mirada externa')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Defensa')
+            div.row 
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Francisco Durand','Tiro al blanco')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Humberto Campodónico','Cristal de Mira')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque Perpetuo')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque Perpetuo')
+            div.row 
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Francisco Durand','Delito de Opinión')
+                div.col-md-3.alone
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Humberto Campodónico','Actualidad Económica - Oscar Dancourt')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Mirada externa')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Defensa')
+            div.row 
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Francisco Durand','Tiro al blanco')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Humberto Campodónico','Cristal de Mira')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque Perpetuo')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque Perpetuo')
+            div.row 
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Francisco Durand','Delito de Opinión')
+                div.col-md-3.alone
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Humberto Campodónico','Actualidad Económica - Oscar Dancourt')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Mirada externa')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Defensa')
+            div.row 
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Francisco Durand','Tiro al blanco')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Humberto Campodónico','Cristal de Mira')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque Perpetuo')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque Perpetuo')
+            div.row 
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Francisco Durand','Delito de Opinión')
+                div.col-md-3.alone
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Humberto Campodónico','Actualidad Económica - Oscar Dancourt')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Mirada externa')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Defensa')
+            div.row 
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Francisco Durand','Tiro al blanco')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Humberto Campodónico','Cristal de Mira')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque Perpetuo')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque Perpetuo')
+            div.row 
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Francisco Durand','Delito de Opinión')
+                div.col-md-3.alone
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Humberto Campodónico','Actualidad Económica - Oscar Dancourt')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Mirada externa')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Defensa')
+            div.row 
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Francisco Durand','Tiro al blanco')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Humberto Campodónico','Cristal de Mira')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque Perpetuo')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque Perpetuo')
+            div.row 
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Francisco Durand','Delito de Opinión')
+                div.col-md-3.alone
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Humberto Campodónico','Actualidad Económica - Oscar Dancourt')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Mirada externa')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Defensa')
+            div.row 
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Francisco Durand','Tiro al blanco')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Humberto Campodónico','Cristal de Mira')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque Perpetuo')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Jaque Perpetuo')
+            div.row 
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Francisco Durand','Delito de Opinión')
+                div.col-md-3.alone
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Humberto Campodónico','Actualidad Económica - Oscar Dancourt')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Mirada externa')
+                div.col-md-3
+                    +only-blog-box('assets/image/img_author_columnista.jpg','Javier Ágreda','Defensa')
+            
