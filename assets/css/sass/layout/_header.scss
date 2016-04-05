@@ -142,6 +142,16 @@ $editorial:#2C3238;
 						font-weight: $pesado;
 						text-decoration: none;
 					}
+					.dropdown{
+						.dropdown-menu{
+							background:#BA1414;
+							li{
+								a{
+
+								}
+							}
+						}
+					}
 				}
 			}
 		.nav.nav-pills{

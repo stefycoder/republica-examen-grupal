@@ -1,10 +1,10 @@
 #foot{
-	background: #E3E3E3;
+	background-color: #E3E3E3;
 	margin-top: 4%;
 	padding-top: 5%;
 	.container{
 		.row{
-			.col-sm-4{
+			.col-md-4{
 				img{
 					padding-top: 40%;
 				}
@@ -18,7 +18,7 @@
 					font-size: 11px;
 				}
 			}
-			.col-sm-3{
+			.col-md-3{
 				ul{
 					li{
 						list-style: none;

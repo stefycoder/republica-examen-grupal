@@ -1,584 +1,797 @@
 <!DOCTYPE html>
 <html lang="es-PE">
-  <!--Mixins HOME-->
   <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>index</title>
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="assets/css/dist/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/dist/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dist/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dist/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap-hover-dropdown.min.js"></script>
-    <script type="text/javascript" src="js/modernizr.custom.68172.js"></script>
-    <script type="text/javascript" src="js/respond.js"></script>
   </head>
   <body>
-    <header></header>
-    <section id="portada">
-      <div class="container-fluid text-center">
-        <div class="row">
-          <div class="col-md-2"><img src="assets/image/banner-aside-home.jpg" class="publicidad"></div>
-          <div class="col-md-12">
-            <h1>GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA</h1>
-            <div class="iconos"><i class="fa fa-facebook fa-stack"></i><i class="fa fa-twitter fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><a href="#" class="minutes">Hace 12 minutos</a><i class="fa fa-circle"></i><a href="#" class="minutes">POLÍTICA</a></div>
-            <div class="col-md-8">
-              <div class="imagen">
-                <h3>JNE impulsará campaña en favor de la aprobación de la Reforma Electoral</h3>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="imagen1">
-                <h4>Martin Belaunde Lossio: Empresas vinculadas al empresario contrataron por s/. 3 000 millones | FOTOS</h4>
-              </div>
-              <div class="imagen1">
-                <h4>Martin Belaunde Lossio: Empresas vinculadas al empresario contrataron por s/. 3 000 millones | FOTOS</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2"><img src="assets/image/banner-aside-home.jpg" class="publicidad"></div>
-        </div>
-      </div>
-    </section>
-    <!--Columnistas-->
-    <section id="columnistas">
-      <div class="container-fluid text-center">
-        <div class="row">
-          <div class="cuadro">
-            <div class="raya1"></div>
-            <h4>COLUMNISTAS</h4>
-            <div class="slider slick"><i><a href="#">
-                  <div class="fa fa-circle"></div></a></i><i><a href="#">
-                  <div class="fa fa-circle"></div></a></i><i><a href="#">
-                  <div class="fa fa-circle"></div></a></i></div>
-          </div>
-          <div class="col-md-2">
-            <div class="black"></div>
-          </div>
-          <div class="col-md-2 gray slick"><img src="assets/image/img-columnistas.jpg" class="publicidad">
-            <h6>Mario Vargas Llosa</h6>
-            <h5>Megarrenuncia apulpinante</h5>
-          </div>
-          <div class="col-md-2 gray slick"><img src="assets/image/img-columnistas.jpg" class="publicidad">
-            <h6>Augusto Álvarez Rodrich</h6>
-            <h5>Respuesta a una derrota estridente</h5>
-          </div>
-          <div class="col-md-2 gray slick"><img src="assets/image/img-columnistas.jpg" class="publicidad">
-            <h6>Mario Vargas Llosa</h6>
-            <h5>Megarrenuncia apulpinante</h5>
-          </div>
-          <div class="col-md-2 gray slick"><img src="assets/image/img-columnistas.jpg" class="publicidad">
-            <h6>Augusto Álvarez Rodrich</h6>
-            <h5>Respuesta a una derrota estridente</h5>
-          </div>
-          <div class="col-md-2 gray slick"><img src="assets/image/img-columnistas.jpg" class="publicidad">
-            <h6>Mario Vargas Llosa</h6>
-            <h5>Megarrenuncia apulpinante</h5>
-          </div>
-          <div class="col-md-2 gray slick"><img src="assets/image/img-columnistas.jpg" class="publicidad">
-            <h6>Augusto Álvarez Rodrich</h6>
-            <h5>Respuesta a una derrota estridente</h5>
-          </div>
-          <div class="col-md-2">
-            <div class="black"></div>
+    <div class="navbar navbar-default">
+      <div class="container publi">
+        <div class="row text-center">
+          <div class="banner-top"></div>
+          <div class="navbar-nav"><a href="index.html" class="navbar-brand">LIBERO.PE</a><a href="blogs.html" class="navbar-brand">ELPOPULAR.PE</a><a href="columnistas.html" class="navbar-brand">FUNDACIÓN GUSTAVO MOHME LLONA</a></div>
+          <div class="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>SUSCRÍBETE AL BOLETÍN</span></li>
+                  <li><a href="" class="fa fa-facebook"></a></li>
+                  <li><a href="" class="fa fa-twitter"></a></li>
+                  <li><a href="" class="fa fa-google-plus"></a></li>
+              <li><a href="contacto.html"><img src="./assets/image/sprites/ico-email.png" alt=""></a></li>
+                  <li><a href="" class="fa fa-rss"></a></li>
+              <button type="btn-default" class="subs btn-default">BUSCAR</button>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-    <!--ENCABEZADO-->
-    <section id="encabezado">
-      <div class="container-fluid text-center">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="blank"></div>
-          </div>
-          <div class="col-md-4">
-            <div class="news">
-              <h5>Mercado de Pases 2015</h5>
-              <div class="img-principal">
-                <p>Mercado de pases 2015 altas, bajas y rumores de los equipos peruanos</p>
-              </div>
-              <p class="parrafo">Todo sobre mercado de pases 2015</p>
-            </div>
-            <div class="news">
-              <h5>Champions League</h5>
-              <div class="img-principal">
-                <p>Mercado de pases 2015 altas, bajas y rumores de los equipos peruanos</p>
-              </div>
-              <p class="parrafo">Todo sobre Champions League</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="news">
-              <h5>Régimen laboral juvenil</h5>
-              <div class="img-principal-pr">
-                <p>Ollanta Humala: Los que han perdido, más allá de tambores y panderetas, son 2 millones de jóvenes | VIDEO</p>
-              </div>
-              <p class="parrafo">Todo sobre el régimen laboral juvenil</p>
-            </div>
-            <div class="news">
-              <h5>Super Bowl</h5>
-              <div class="img-principal-pr">
-                <p>Ollanta Humala: Los que han perdido, más allá de tambores y panderetas, son 2 millones de jóvenes | VIDEO</p>
-              </div>
-              <p class="parrafo">Todo sobre Super Bowl</p>
-            </div>
-          </div>
-          <div class="col-md-4"><img src="assets/image/banner-aside-home.jpg"></div>
-          <div class="col-md-2">
-            <div class="blank"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="noticias">
+    </div>
+    <section id="centro">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="blank"></div>
-          </div>
-          <div class="col-md-8"><a href="#" class="noticias-last">ÚLTIMAS NOTICIAS</a><i class="fa fa-angle-double-down"></i>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-                <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-youtube-play"></i></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Roque Benavides respalda proyecto Tía María y espera que Conga se socialice</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Youtube: hombre finge ahogarse y su perro lo rescata | FOTOS</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el atlético de Madrid</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la...</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-                <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-youtube-play"></i></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Roque Benavides respalda proyecto Tía María y espera que Conga se socialice</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Youtube: hombre finge ahogarse y su perro lo rescata | FOTOS</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el atlético de Madrid</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la...</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-                <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-youtube-play"></i></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Roque Benavides respalda proyecto Tía María y espera que Conga se socialice</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Youtube: hombre finge ahogarse y su perro lo rescata | FOTOS</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el atlético de Madrid</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la...</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Roque Benavides respalda proyecto Tía María y espera que Conga se socialice</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Youtube: hombre finge ahogarse y su perro lo rescata | FOTOS</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el atlético de Madrid</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-                <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-youtube-play"></i></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Roque Benavides respalda proyecto Tía María y espera que Conga se socialice</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Youtube: hombre finge ahogarse y su perro lo rescata | FOTOS</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el atlético de Madrid</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-                <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-youtube-play"></i></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-                <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-youtube-play"></i></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-                <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-youtube-play"></i></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
-            </div>
-            <hr>
-            <h6>Hace 1 hora 12 mins</h6>
-            <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
-            <div class="news-relevantes"><img src="assets/image/img_news.jpg">
-              <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
-                <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
-            </div>
-            <hr>
-          </div>
-          <div class="col-md-4">
-            <div class="box-boletin">
-              <div class="mensajeria"><img src="assets/image/img_sucribe.png">
-                <h4>Suscríbete a nuestro boletín</h4>
-                <input type="search">
-                <button type="submit">SUSCRIBIRSE</button>
+        <div class="col-sm-2 hidden-xs hidden-sm">
+          <div class="banner-left"></div>
+        </div>
+        <div class="col-sm-12">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="logo"></div>
+              </div>
+              <div class="col-md-5">
+                <div class="domingo text-center"><span>DOMINGO</span>
+                  <p>HABLA LA LIDERESA DEL NACIONALISMO</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="corrupcion text-center"><img src="./assets/image/img_editorial_text.jpg" alt="" class="edit">
+                  <h4>La corrupción, los origenes</h4><span>Por: Gustavo mohme llona</span><img src="./assets/image/img_author.jpg" alt="" class="pull-right">
+                </div>
               </div>
             </div>
-            <div class="aweita"><img src="assets/image/logo_aweita.jpg" class="logo">
-              <div class="img-aweita clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p>Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
-              </div>
-              <div class="img-aweita clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p class="parrafo">Lewis Carroll: un día como hoy nació el autor de 'Alici en el..'</p>
-              </div>
-              <div class="img-aweita clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p class="parrafo">Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
-              </div>
-              <div class="img-aweita clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p class="parrafo">Gameplay de 'Dead Kings', el descargable premium de 'Assasins's</p>
-              </div>
-              <p class="link">Más en<a href="#">Aweita.pe</a></p>
-              <div class="raya"></div>
+            <ul class="nav-justified">
+                  <li><a href="">POLÍTICA</a></li>
+                  <li><a href="">ECONOMÍA</a></li>
+                  <li><a href="">SOCIEDAD</a></li>
+                  <li><a href="">ELECC. REGIONALES</a></li>
+                  <li><a href="">DEPORTES</a></li>
+                  <li><a href="">CHAMPIONS L.</a></li>
+                  <li><a href="">ESPECTÁCULOS</a></li>
+                  <li><a href="">ED.IMPRESA</a></li>
+                  <li><a href="">REGIONALES</a></li>
+              <li>
+                    <div class="dropdown"><a type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-mas dropdown-toggle"><span>MAS SECCIONES</span><span class="caret"></span></a>
+                      <ul aria-labelledby="dropdownMenu1" class="dropdown-menu">
+                        <li><a href="index.html">home</a></li>
+                        <li> <a href="columnistas.html">Columnistas</a></li>
+                        <li> <a href="blogs.html">Blog</a></li>
+                        <li> <a href="contacto.html">Contacto</a></li>
+                      </ul>
+                    </div>
+              </li>
+            </ul>
+            <div class="nav nav-pills"><span>TEMAS DEL DIA</span>
+                  <li><a href="">Globos de oro</a></li>
+                  <li><a href="">Youtube</a></li>
+                  <li><a href="">PNP</a></li>
+                  <li><a href="">Charlie Hebdo</a></li>
+                  <li><a href="">FC Barcelona</a></li>
+                  <li><a href="">Alianza Lima</a></li>
+                  <li><a href="">Balón</a></li>
             </div>
-            <div class="fotos-destacadas clearfix">
-                <div class="raya1"></div>
-                <h4>FOTOS DESTACADAS</h4><img src="assets/image/img_fotodes_prominent.jpg">
-              <p class="lineas">Líneas de Nasca: Admiten prisión preventiva de 6 meses para activista de Greenpeace | FOTOS</p>
-            </div>
-            <div class="fotos-destacadas1 clearfix"><img src="assets/image/img_fotodes.jpg">
-              <p>Uchuraccay: El pueblo que recibe con flores a quienes llegan a pie | FOTOS</p>
-            </div>
-            <div class="fotos-destacadas1 clearfix"><img src="assets/image/img_fotodes.jpg">
-              <p>Alianza Lima vs Fénix: íntimos ganaron 1-0 en "Noche Blanquiazul" | VIDEO Y FOTOS</p>
-            </div>
-            <div class="fotos-destacadas1 clearfix"><img src="assets/image/img_fotodes.jpg">
-              <p>Alianza Lima vs Fénix: íntimos ganaron 1-0 en "Noche Blanquiazul" | VIDEO Y FOTOS</p>
-            </div>
-            <hr>
-            <div class="especiales">
-                <div class="raya1"></div>
-                <h4>ESPECIALES</h4>
-              <div class="cuadro">
-                <h5>Régimen laboral juvenil</h5>
-              </div>
-              <div class="cuadro">
-                <h5>Régimen laboral juvenil</h5>
-              </div>
-              <div class="cuadro">
-                <h5>Régimen laboral juvenil</h5>
-              </div>
-              <div class="cuadro">
-                <h5>Régimen laboral juvenil</h5>
-              </div>
-            </div>
-            <div class="caricaturas">
-                <div class="raya1"></div>
-                <h4>CARICATURAS DEL DÍA</h4>
-              <h5>Carlincaturas 30-01-2015</h5><img src="assets/image/img_carlincatura_sd.jpg">
-              <p>Todas las carlincaturas</p>
-              <hr>
-            </div>
-            <div class="blogueros">
-                <div class="raya1"></div>
-                <h4>NUESTROS BLOGUEROS</h4>
-            </div>
-              <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
-                <h5>Charlie Hebdo, historia que no debe repetirse</h5>
-              </div>
-              <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
-                <h5>El único pulpin es Humala</h5>
-              </div>
-              <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
-                <h5>Dios ha muerto, tengo las manos</h5>
-              </div>
-              <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
-                <h5>El único pulpin es Humala</h5>
-              </div>
-              <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
-                <h5>Charlie Hebdo, historia que no debe repetirse</h5>
-              </div>
-              <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
-                <h5>El único pulpin es Humala</h5>
-              </div>
-              <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
-                <h5>Dios ha muerto, tengo las manos</h5>
-              </div>
-              <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
-                <h5>El único pulpin es Humala</h5>
-              </div>
-            <p class="p-blog">Todos los blogs</p>
-            <hr>
-            <div class="edicion-impresa">
-                <div class="raya1"></div>
-                <h4>EDICIÓN IMPRESA</h4>
-              <h5 class="general">La república - Lima</h5><img src="assets/image/img_impreso_sd_prominent.jpg">
-            </div>
-            <div class="newspaper clearfix"><img src="assets/image/img_impreso_sd.jpg">
-              <h5 class="republica">Extorsionan a menores en colegios</h5><a href="#">La República - </a>
-            </div>
-            <div class="newspaper clearfix"><img src="assets/image/img_impreso_sd.jpg">
-              <h5 class="republica">Extorsionan a menores en colegios</h5><a href="#">La República - Norte</a>
-            </div>
-            <div class="newspaper clearfix"><img src="assets/image/img_impreso_sd.jpg">
-              <h5 class="republica">Extorsionan a menores en colegios</h5><a href="#">La República - Norte</a>
-            </div>
-            <hr>
-            <div class="especiales">
-                <div class="raya1"></div>
-                <h4>INFOGRAFÍAS</h4>
-              <div class="cuadro">
-                <h5>Régimen laboral juvenil</h5>
-              </div>
-              <div class="cuadro">
-                <h5>Régimen laboral juvenil</h5>
-              </div>
-            </div>
-            <hr>
-            <div class="box-bar">
-              <div class="encuesta"><img src="assets/image/img_pregunta.png">
-                <h4>La pregunta de hoy</h4>
-                <p class="parrafo1">¿Cree usted que la premier Ana Jara debe renunciar?</p>
-                <input type="search">
-                <button type="submit">VOTAR</button>
-                <p class="parrafo">Ver resultados</p>
-              </div>
-              <div class="resultados">
-                <h4>La pregunta de ayer</h4>
-                <p>¿Cree usted que se materializó la conmemoración del fallo de la Haya en Lima?</p>
-                <div class="progress">
-                  <div class="progress-bar">
-                    <p>55%</p>
+            <!--Mixins HOME-->
+            <section id="portada">
+              <div class="container-fluid text-center">
+                <div class="row">
+                  <div class="col-md-16">
+                    <h1>GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA</h1>
+                    <div class="iconos"><i class="fa fa-facebook fa-stack"></i><i class="fa fa-twitter fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><a href="#" class="minutes">Hace 12 minutos</a><i class="fa fa-circle"></i><a href="#" class="minutes">POLÍTICA</a></div>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="imagen">
+                          <h3>JNE impulsará campaña en favor de la aprobación de la Reforma Electoral</h3>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="imagen1">
+                          <h4>Martin Belaunde Lossio: Empresas vinculadas al empresario contrataron por s/. 3 000 millones | FOTOS</h4>
+                        </div>
+                        <div class="imagen1">
+                          <h4>Martin Belaunde Lossio: Empresas vinculadas al empresario contrataron por s/. 3 000 millones | FOTOS</h4>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="progress">
-                  <div class="progress-bar1">
-                    <p>25%</p>
+              </div>
+            </section>
+            <!--Columnistas-->
+            <section id="columnistas">
+              <div class="container-fluid text-center">
+                <div class="row">
+                  <div class="cuadro">
+                    <div class="raya1"></div>
+                    <h4>COLUMNISTAS</h4>
+                  </div>
+                  <div class="col-sm-16">
+                    <div class="slick responsive slider-responsive">
+                      <div class="gray"><img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Mario Álvarez Rodrich</h6>
+                        <h5>Megarrenuncia apulpinante</h5>
+                      </div>
+                      <div class="gray"> <img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Augusto Álvarez Rodrich</h6>
+                        <h5>Respuesta a una derrota estridente</h5>
+                      </div>
+                      <div class="col-md-2 gray"><img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Mario Álvarez Rodrich</h6>
+                        <h5>Megarrenuncia apulpinante</h5>
+                      </div>
+                      <div class="col-md-2 gray"> <img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Augusto Álvarez Rodrich</h6>
+                        <h5>Respuesta a una derrota estridente</h5>
+                      </div>
+                      <div class="col-md-2 gray"><img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Mario Álvarez Rodrich</h6>
+                        <h5>Megarrenuncia apulpinante</h5>
+                      </div>
+                      <div class="col-md-2 gray"> <img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Augusto Álvarez Rodrich</h6>
+                        <h5>Respuesta a una derrota estridente</h5>
+                      </div>
+                      <div class="col-md-2 gray"><img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Mario Álvarez Rodrich</h6>
+                        <h5>Megarrenuncia apulpinante</h5>
+                      </div>
+                      <div class="col-md-2 gray"> <img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Augusto Álvarez Rodrich</h6>
+                        <h5>Respuesta a una derrota estridente</h5>
+                      </div>
+                      <div class="col-md-2 gray"><img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Mario Álvarez Rodrich</h6>
+                        <h5>Megarrenuncia apulpinante</h5>
+                      </div>
+                      <div class="col-md-2 gray"> <img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Augusto Álvarez Rodrich</h6>
+                        <h5>Respuesta a una derrota estridente</h5>
+                      </div>
+                      <div class="col-md-2 gray"><img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Mario Álvarez Rodrich</h6>
+                        <h5>Megarrenuncia apulpinante</h5>
+                      </div>
+                      <div class="col-md-2 gray"> <img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Augusto Álvarez Rodrich</h6>
+                        <h5>Respuesta a una derrota estridente</h5>
+                      </div>
+                      <div class="col-md-2 gray"><img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Mario Álvarez Rodrich</h6>
+                        <h5>Megarrenuncia apulpinante</h5>
+                      </div>
+                      <div class="col-md-2 gray"> <img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Augusto Álvarez Rodrich</h6>
+                        <h5>Respuesta a una derrota estridente</h5>
+                      </div>
+                      <div class="col-md-2 gray"><img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Mario Álvarez Rodrich</h6>
+                        <h5>Megarrenuncia apulpinante</h5>
+                      </div>
+                      <div class="col-md-2 gray"> <img src="assets/image/img-columnistas.jpg" class="publicidad">
+                        <h6>Augusto Álvarez Rodrich</h6>
+                        <h5>Respuesta a una derrota estridente</h5>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <p class="parrafo">Ver preguntas pasadas</p>
               </div>
-            </div>
-            <div class="libero"><img src="assets/image/logo_libero.jpg" class="logo">
-              <div class="img-libero clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p>Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
+            </section>
+            <!--ENCABEZADO-->
+            <section id="encabezado">
+              <div class="container-fluid text-center">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="news">
+                      <h5>Mercado de Pases 2015</h5>
+                      <div class="img-principal">
+                        <p>Mercado de pases 2015 altas, bajas y rumores de los equipos peruanos</p>
+                      </div>
+                      <p class="parrafo">Todo sobre mercado de pases 2015</p>
+                    </div>
+                    <div class="news">
+                      <h5>Champions League</h5>
+                      <div class="img-principal">
+                        <p>Mercado de pases 2015 altas, bajas y rumores de los equipos peruanos</p>
+                      </div>
+                      <p class="parrafo">Todo sobre Champions League</p>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="news">
+                      <h5>Régimen laboral juvenil</h5>
+                      <div class="img-principal-pr">
+                        <p>Ollanta Humala: Los que han perdido, más allá de tambores y panderetas, son 2 millones de jóvenes | VIDEO</p>
+                      </div>
+                      <p class="parrafo">Todo sobre el régimen laboral juvenil</p>
+                    </div>
+                    <div class="news">
+                      <h5>Super Bowl</h5>
+                      <div class="img-principal-pr">
+                        <p>Ollanta Humala: Los que han perdido, más allá de tambores y panderetas, son 2 millones de jóvenes | VIDEO</p>
+                      </div>
+                      <p class="parrafo">Todo sobre Super Bowl</p>
+                    </div>
+                  </div>
+                  <div class="col-md-5"><img src="assets/image/banner-aside-home.jpg">
+                    <section id="noticias">
+                      <div class="col-md-8">
+                        <div class="container-fluid"><a href="#" class="noticias-last">ÚLTIMAS NOTICIAS hola</a><i class="fa fa-angle-double-down"></i>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                                        <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-youtube-play"></i></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Roque Benavides respalda proyecto Tía María y espera que Conga se socialice</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Youtube: hombre finge ahogarse y su perro lo rescata | FOTOS</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el atlético de Madrid</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la...</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                                        <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-youtube-play"></i></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Roque Benavides respalda proyecto Tía María y espera que Conga se socialice</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Youtube: hombre finge ahogarse y su perro lo rescata | FOTOS</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el atlético de Madrid</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la...</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                                        <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-youtube-play"></i></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Roque Benavides respalda proyecto Tía María y espera que Conga se socialice</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Youtube: hombre finge ahogarse y su perro lo rescata | FOTOS</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el atlético de Madrid</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la...</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Roque Benavides respalda proyecto Tía María y espera que Conga se socialice</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Youtube: hombre finge ahogarse y su perro lo rescata | FOTOS</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el atlético de Madrid</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                                        <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-youtube-play"></i></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Roque Benavides respalda proyecto Tía María y espera que Conga se socialice</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Youtube: hombre finge ahogarse y su perro lo rescata | FOTOS</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el atlético de Madrid</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                                        <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-youtube-play"></i></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                                        <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-youtube-play"></i></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                                        <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-youtube-play"></i></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">10</a><i class="fa fa-circle"></i><a href="#" class="letter">ESPECTÁCULOS</a><i class="fa fa-circle"></i><i class="fa fa-camera"></i>
+                          </div>
+                          <hr>
+                          <h6>Hace 1 hora 12 mins</h6>
+                          <h4>Emma Watson protagonizará 'La bella y la bestia' | VIDEO</h4>
+                          <div class="news-relevantes"><img src="assets/image/img_news.jpg">
+                            <p>La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'La bella y la bestia' en la versión de carne y hueso.</p>
+                                        <div class="social-box2"><i class="fa fa-twitter fa-stack"></i><i class="fa fa-facebook fa-stack"></i><i class="fa fa-google-plus fa-stack"></i><i class="fa fa-circle"></i><img src="assets/image/ico_comment.png" class="comment"><a href="#" class="number">0</a><i class="fa fa-circle"></i><a href="#" class="letter">AREQUIPA</a></div>
+                          </div>
+                          <hr>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="box-boletin">
+                            <div class="mensajeria"><img src="assets/image/img_sucribe.png">
+                              <h4>Suscríbete a nuestro boletín</h4>
+                              <input type="search">
+                              <button type="submit">SUSCRIBIRSE</button>
+                            </div>
+                          </div>
+                          <div class="aweita"><img src="assets/image/logo_aweita.jpg" class="logo">
+                            <div class="img-aweita clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p>Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
+                            </div>
+                            <div class="img-aweita clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p class="parrafo">Lewis Carroll: un día como hoy nació el autor de 'Alici en el..'</p>
+                            </div>
+                            <div class="img-aweita clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p class="parrafo">Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
+                            </div>
+                            <div class="img-aweita clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p class="parrafo">Gameplay de 'Dead Kings', el descargable premium de 'Assasins's</p>
+                            </div>
+                            <p class="link">Más en<a href="#">Aweita.pe</a></p>
+                            <div class="raya"></div>
+                          </div>
+                          <div class="fotos-destacadas clearfix">
+                                        <div class="raya1"></div>
+                                        <h4>FOTOS DESTACADAS</h4><img src="assets/image/img_fotodes_prominent.jpg">
+                            <p class="lineas">Líneas de Nasca: Admiten prisión preventiva de 6 meses para activista de Greenpeace | FOTOS</p>
+                          </div>
+                          <div class="fotos-destacadas1 clearfix"><img src="assets/image/img_fotodes.jpg">
+                            <p>Uchuraccay: El pueblo que recibe con flores a quienes llegan a pie | FOTOS</p>
+                          </div>
+                          <div class="fotos-destacadas1 clearfix"><img src="assets/image/img_fotodes.jpg">
+                            <p>Alianza Lima vs Fénix: íntimos ganaron 1-0 en "Noche Blanquiazul" | VIDEO Y FOTOS</p>
+                          </div>
+                          <div class="fotos-destacadas1 clearfix"><img src="assets/image/img_fotodes.jpg">
+                            <p>Alianza Lima vs Fénix: íntimos ganaron 1-0 en "Noche Blanquiazul" | VIDEO Y FOTOS</p>
+                          </div>
+                          <hr>
+                          <div class="especiales">
+                                        <div class="raya1"></div>
+                                        <h4>ESPECIALES</h4>
+                            <div class="cuadro">
+                              <h5>Régimen laboral juvenil</h5>
+                            </div>
+                            <div class="cuadro">
+                              <h5>Régimen laboral juvenil</h5>
+                            </div>
+                            <div class="cuadro">
+                              <h5>Régimen laboral juvenil</h5>
+                            </div>
+                            <div class="cuadro">
+                              <h5>Régimen laboral juvenil</h5>
+                            </div>
+                          </div>
+                          <div class="caricaturas">
+                                        <div class="raya1"></div>
+                                        <h4>CARICATURAS DEL DÍA</h4>
+                            <h5>Carlincaturas 30-01-2015</h5><img src="assets/image/img_carlincatura_sd.jpg">
+                            <p>Todas las carlincaturas</p>
+                            <hr>
+                          </div>
+                          <div class="blogueros">
+                                        <div class="raya1"></div>
+                                        <h4>NUESTROS BLOGUEROS</h4>
+                          </div>
+                                      <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
+                                        <h5>Charlie Hebdo, historia que no debe repetirse</h5>
+                                      </div>
+                                      <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
+                                        <h5>El único pulpin es Humala</h5>
+                                      </div>
+                                      <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
+                                        <h5>Dios ha muerto, tengo las manos</h5>
+                                      </div>
+                                      <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
+                                        <h5>El único pulpin es Humala</h5>
+                                      </div>
+                                      <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
+                                        <h5>Charlie Hebdo, historia que no debe repetirse</h5>
+                                      </div>
+                                      <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
+                                        <h5>El único pulpin es Humala</h5>
+                                      </div>
+                                      <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
+                                        <h5>Dios ha muerto, tengo las manos</h5>
+                                      </div>
+                                      <div class="writer-man clearfix"><img src="assets/image/img_blogueros.jpg"><a href="#">Augusto Álvarez Rodrich</a>
+                                        <h5>El único pulpin es Humala</h5>
+                                      </div>
+                          <p class="p-blog">Todos los blogs</p>
+                          <hr>
+                          <div class="edicion-impresa">
+                                        <div class="raya1"></div>
+                                        <h4>EDICIÓN IMPRESA</h4>
+                            <h5 class="general">La república - Lima</h5><img src="assets/image/img_impreso_sd_prominent.jpg">
+                          </div>
+                          <div class="newspaper clearfix"><img src="assets/image/img_impreso_sd.jpg">
+                            <h5 class="republica">Extorsionan a menores en colegios</h5><a href="#">La República - </a>
+                          </div>
+                          <div class="newspaper clearfix"><img src="assets/image/img_impreso_sd.jpg">
+                            <h5 class="republica">Extorsionan a menores en colegios</h5><a href="#">La República - Norte</a>
+                          </div>
+                          <div class="newspaper clearfix"><img src="assets/image/img_impreso_sd.jpg">
+                            <h5 class="republica">Extorsionan a menores en colegios</h5><a href="#">La República - Norte</a>
+                          </div>
+                          <hr>
+                          <div class="especiales">
+                                        <div class="raya1"></div>
+                                        <h4>INFOGRAFÍAS</h4>
+                            <div class="cuadro">
+                              <h5>Régimen laboral juvenil</h5>
+                            </div>
+                            <div class="cuadro">
+                              <h5>Régimen laboral juvenil</h5>
+                            </div>
+                          </div>
+                          <hr>
+                          <div class="box-bar">
+                            <div class="encuesta"><img src="assets/image/img_pregunta.png">
+                              <h4>La pregunta de hoy</h4>
+                              <p class="parrafo1">¿Cree usted que la premier Ana Jara debe renunciar?</p>
+                              <input type="search">
+                              <button type="submit">VOTAR</button>
+                              <p class="parrafo">Ver resultados</p>
+                            </div>
+                            <div class="resultados">
+                              <h4>La pregunta de ayer</h4>
+                              <p>¿Cree usted que se materializó la conmemoración del fallo de la Haya en Lima?</p>
+                              <div class="progress">
+                                <div class="progress-bar">
+                                  <p>55%</p>
+                                </div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar1">
+                                  <p>25%</p>
+                                </div>
+                              </div>
+                              <p class="parrafo">Ver preguntas pasadas</p>
+                            </div>
+                          </div>
+                          <div class="libero"><img src="assets/image/logo_libero.jpg" class="logo">
+                            <div class="img-libero clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p>Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
+                            </div>
+                            <div class="img-libero clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p class="parrafo">Lewis Carroll: un día como hoy nació el autor de 'Alici en el..'</p>
+                            </div>
+                            <div class="img-libero clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p class="parrafo">Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
+                            </div>
+                            <div class="img-libero clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p class="parrafo">Gameplay de 'Dead Kings', el descargable premium de 'Assasins's</p>
+                            </div>
+                            <p class="link">Más en<a href="#">Libero.pe</a></p>
+                            <div class="raya"></div>
+                          </div>
+                          <div class="el-popular"><img src="assets/image/logo_popular.jpg" class="logo">
+                            <div class="img-popular clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p>Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
+                            </div>
+                            <div class="img-popular clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p class="parrafo">Lewis Carroll: un día como hoy nació el autor de 'Alici en el..'</p>
+                            </div>
+                            <div class="img-popular clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p class="parrafo">Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
+                            </div>
+                            <div class="img-popular clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p class="parrafo">Gameplay de 'Dead Kings', el descargable premium de 'Assasins's</p>
+                            </div>
+                            <p class="link">Más en<a href="#">elPopular.pe</a></p>
+                            <div class="raya"></div>
+                          </div>
+                          <div class="wapa"><img src="assets/image/logo_wapa.jpg" class="logo">
+                            <div class="img-wapa clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p>Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
+                            </div>
+                            <div class="img-wapa clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p class="parrafo">Lewis Carroll: un día como hoy nació el autor de 'Alici en el..'</p>
+                            </div>
+                            <div class="img-wapa clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p class="parrafo">Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
+                            </div>
+                            <div class="img-wapa clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
+                              <p class="parrafo">Gameplay de 'Dead Kings', el descargable premium de 'Assasins's</p>
+                            </div>
+                            <p class="link">Más en<a href="#">Wapa.pe</a></p>
+                            <div class="raya"></div>
+                          </div>
+                          <div class="box-car">
+                            <div class="mensajeria"><img src="assets/image/img_reporteroc.png" class="camera">
+                              <h4>Reportero ciudadano</h4><img src="assets/image/img_sd_reporteroc.jpg" class="car">
+                              <h5>Estacionamiento indebido</h5>
+                              <p>¿Está permitido que dejen sus auto en reiteradas ocasiones toda la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta</p>
+                            </div>
+                            <button type="submit">ENVIAR FOTOS</button>
+                            <h5 class="color">Más fotos</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
               </div>
-              <div class="img-libero clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p class="parrafo">Lewis Carroll: un día como hoy nació el autor de 'Alici en el..'</p>
-              </div>
-              <div class="img-libero clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p class="parrafo">Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
-              </div>
-              <div class="img-libero clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p class="parrafo">Gameplay de 'Dead Kings', el descargable premium de 'Assasins's</p>
-              </div>
-              <p class="link">Más en<a href="#">Libero.pe</a></p>
-              <div class="raya"></div>
-            </div>
-            <div class="el-popular"><img src="assets/image/logo_popular.jpg" class="logo">
-              <div class="img-popular clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p>Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
-              </div>
-              <div class="img-popular clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p class="parrafo">Lewis Carroll: un día como hoy nació el autor de 'Alici en el..'</p>
-              </div>
-              <div class="img-popular clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p class="parrafo">Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
-              </div>
-              <div class="img-popular clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p class="parrafo">Gameplay de 'Dead Kings', el descargable premium de 'Assasins's</p>
-              </div>
-              <p class="link">Más en<a href="#">elPopular.pe</a></p>
-              <div class="raya"></div>
-            </div>
-            <div class="wapa"><img src="assets/image/logo_wapa.jpg" class="logo">
-              <div class="img-wapa clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p>Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
-              </div>
-              <div class="img-wapa clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p class="parrafo">Lewis Carroll: un día como hoy nació el autor de 'Alici en el..'</p>
-              </div>
-              <div class="img-wapa clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p class="parrafo">Juan Román Riquelme el adiós a 'Último 10' de Argentina</p>
-              </div>
-              <div class="img-wapa clearfix"><img src="assets/image/img_aweita.jpg" class="futbol">
-                <p class="parrafo">Gameplay de 'Dead Kings', el descargable premium de 'Assasins's</p>
-              </div>
-              <p class="link">Más en<a href="#">Wapa.pe</a></p>
-              <div class="raya"></div>
-            </div>
-            <div class="box-car">
-              <div class="mensajeria"><img src="assets/image/img_reporteroc.png" class="camera">
-                <h4>Reportero ciudadano</h4><img src="assets/image/img_sd_reporteroc.jpg" class="car">
-                <h5>Estacionamiento indebido</h5>
-                <p>¿Está permitido que dejen sus auto en reiteradas ocasiones toda la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta</p>
-              </div>
-              <button type="submit">ENVIAR FOTOS</button>
-              <h5 class="color">Más fotos</h5>
-            </div>
+            </section>
           </div>
-          <div class="col-md-2">
-            <div class="blank"></div>
-          </div>
+        </div>
+        <div class="col-sm-2 hidden-xs hidden-sm">
+          <div class="banner-right"></div>
         </div>
       </div>
     </section>
+    <footer id="foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-16"><img src="assets/image/logo-grupo-la-republica.png" alt="logo">
+            <h1>Grupo La República Digital</h1>
+            <p>Jr. Camaná 320 Cercado de Lima</p>
+            <p>Teléfono: 711-600</p>
+            <p>(Central Telefónica)</p><span>todos los derechos reservados-2015</span>
+          </div>
+          <div class="col-md-3 col-sm-8">
+            <ul>
+                  <li><a href="#">Roger Federer</a></li>
+                  <li><a href="#">SBS</a></li>
+                  <li><a href="#">Scarlett Johansson</a></li>
+                  <li><a href="#">Scotiabank</a></li>
+                  <li><a href="#">Selena Gómez</a></li>
+                  <li><a href="#">Spiderman</a></li>
+                  <li><a href="#">Sporting Cristal</a></li>
+                  <li><a href="#">Sunat</a></li>
+                  <li><a href="#">Telefonica del Peru</a></li>
+                  <li><a href="#">The Walking Dead</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Universidad Cesar Vallejo</a></li>
+                  <li><a href="#">Universidad San Martin</a></li>
+                  <li><a href="#">Universitario de Deportes</a></li>
+                  <li><a href="#">Xbox</a></li>
+                  <li><a href="#">YouTube</a></li>
+                  <li><a href="#">Bayern Múnich</a></li>
+                  <li><a href="#">Bayern Munich</a></li>
+                  <li><a href="#">BBVA</a></li>
+                  <li><a href="#">Xbox</a></li>
+                  <li><a href="#">BCP</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-8">
+            <ul>
+                  <li><a href="#">Al fondo hay sitio</a></li>
+                  <li><a href="#">Alejandro Toledo</a></li>
+                  <li><a href="#">Alianza Lima</a></li>
+                  <li><a href="#">Alianza Lima</a></li>
+                  <li><a href="#">Banco de la Nación</a></li>
+                  <li><a href="#">Barack Obama</a></li>
+                  <li><a href="#">Universidad Cesar</a></li>
+                  <li><a href="#">Vallejo</a></li>
+                  <li><a href="#">Universidad San Martin</a></li>
+                  <li><a href="#">Barcelona</a></li>
+                  <li><a href="#">Bayern Múnich</a></li>
+                  <li><a href="#">Bayern Munich</a></li>
+                  <li><a href="#">BBVA</a></li>
+                  <li><a href="#">Xbox</a></li>
+                  <li><a href="#">BCP</a></li>
+                  <li><a href="#">Batman</a></li>
+                  <li><a href="#">Bayern Múnich</a></li>
+                  <li><a href="#">Bayern Munich</a></li>
+                  <li><a href="#">BBVA</a></li>
+                  <li><a href="#">Xbox</a></li>
+                  <li><a href="#">BCP</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-8">
+            <ul>
+                  <li><a href="#">One Direction</a></li>
+                  <li><a href="#">ONPE</a></li>
+                  <li><a href="#">Pablo Escobar</a></li>
+                  <li><a href="#">Paolo Guerrero</a></li>
+                  <li><a href="#">Pensión 65</a></li>
+                  <li><a href="#">PNP</a></li>
+                  <li><a href="#">Pensión dólar</a></li>
+                  <li><a href="#">Universidad Cesar Vallejo</a></li>
+                  <li><a href="#">Universidad San Martin</a></li>
+                  <li><a href="#">Premier League</a></li>
+                  <li><a href="#">Bayern Múnich</a></li>
+                  <li><a href="#">Bayern Munich</a></li>
+                  <li><a href="#">BBVA</a></li>
+                  <li><a href="#">Xbox</a></li>
+                  <li><a href="#">BCP</a></li>
+                  <li><a href="#">Proyecto Conga</a></li>
+                  <li><a href="#">PUCP</a></li>
+                  <li><a href="#">Real Madrid</a></li>
+                  <li><a href="#">Redes sociales</a></li>
+                  <li><a href="#">Reniec</a></li>
+                  <li><a href="#">Robert Pattinson</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-8">
+            <ul>
+                  <li><a href="#">Al fondo hay sitio</a></li>
+                  <li><a href="#">Alejandro Toledo</a></li>
+                  <li><a href="#">Alianza Lima</a></li>
+                  <li><a href="#">Alianza Lima</a></li>
+                  <li><a href="#">Banco de la Nación</a></li>
+                  <li><a href="#">Barack Obama</a></li>
+                  <li><a href="#">Universidad Cesar</a></li>
+                  <li><a href="#">Vallejo</a></li>
+                  <li><a href="#">Bayern Múnich</a></li>
+                  <li><a href="#">Bayern Munich</a></li>
+                  <li><a href="#">BBVA</a></li>
+                  <li><a href="#">Xbox</a></li>
+                  <li><a href="#">BCP</a></li>
+                  <li><a href="#">Universidad San Martin</a></li>
+                  <li><a href="#">Barcelona</a></li>
+                  <li><a href="#">Batman</a></li>
+                  <li><a href="#">Bayern Múnich</a></li>
+                  <li><a href="#">Bayern Munich</a></li>
+                  <li><a href="#">BBVA</a></li>
+                  <li><a href="#">Xbox</a></li>
+                  <li><a href="#">BCP</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.custom.68172.js"></script>
+    <script type="text/javascript" src="assets/js/respond.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
   </body>
 </html>

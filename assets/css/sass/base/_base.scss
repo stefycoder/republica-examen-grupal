@@ -1,0 +1,20 @@
+.slider-responsive{
+	background: #F2F2F2;
+	margin-bottom: 50px;
+
+}
+.slick-dots{
+	font-size: 50px;
+	li.slick-active {
+		button:before{
+			font-size: 50px;
+			color: red;
+		}
+	}
+	li{
+	button:before{
+			font-size: 50px;
+			color: gray;
+		}
+	}
+}
