@@ -2,9 +2,153 @@ extends ./layout/header.jade
 block pagina
 	title Contacto
 block contenido
-	//section
+	section#mensaje
 		.container
-			.row
-				form
-					input.form-control(type="text",placeholder="nombre")
-					input.form-control(type="text",placeholder="nombre")
+			.row.text-center
+				h1 Contáctese con nosotros
+				p llena este formulario si nesesita enviarnos alguna informacion acerca del contenido del sitio web, su funcionalidad,o si tiene alguna propuesta de informacion o mejora para el sitio. Asi mismo, puede hacer llegar a los redactores su opinión acerca de los contenidos de una determinada sección el cual podra elegir como destinatario.
+				.caja
+					form
+						input.form-control(type="text",placeholder="Nombres Completos")
+						input.form-control(type="text",placeholder="Correo electrónico")
+						input.form-control(type="text",placeholder="Teléfonos")
+						span (opcional)
+					.cajon.text-left
+						h1.text-left Elija un destinatario
+						.radio
+							label
+								input(type="radio", name="optionsRadios", id="optionsRadios1", value="option1",cheked)
+								option(data-toggle="tooltip" data-placement="top" title="Sugerencias para el sitio web") Sugerencias para el sitio web
+								p (ej:funcionamiento y mejoras para el sitio)
+						.radio
+							label
+								input(type="radio", name="optionsRadios", id="optionsRadios1", value="option1",cheked)
+								option(data-toggle="tooltip" data-placement="top" title="Direccion periodística") Direccion periodística
+								p (ej:sugerencia para la nota de prensa) 
+						.radio
+							label
+								input(type="radio", name="optionsRadios", id="optionsRadios1", value="option1",cheked)
+								option(data-toggle="tooltip" data-placement="top" title="Direccion comercial") Direccion comercial
+								p (ej:Publicidad en diarios o sitios web)  
+						.radio
+							label
+								input(type="radio", name="optionsRadios", id="optionsRadios1", value="option1",cheked)
+								option(data-toggle="tooltip" data-placement="top" title="Cartas al director") Cartas al director
+								p (ej:denuncias,comentarios e impresiones)  
+						.radio
+							label
+								input(type="radio", name="optionsRadios", id="optionsRadios1", value="option1",cheked)
+								option(data-toggle="tooltip" data-placement="top" title="promociones y productos del diario") promociones y productos del diario
+								p (ej:Promociones,tablet,etc)  
+						.radio
+							label
+								input(type="radio", name="optionsRadios", id="optionsRadios1", value="option1",cheked)
+								option(data-toggle="tooltip" data-placement="top" title="Archivo periodistico") Archivo periodistico
+								p (ej:ediciones impresas/fotos)  
+						textarea(name="messaje",placeholder="Mensaje")
+						img(src="./assets/image/contacto_submit_btn.jpg", alt="")
+		mixin nav(url,texto)
+				li
+					a(href=url) #{texto}
+			footer#foot
+				.container
+					.row
+						.col-sm-4
+							img(src="assets/image/logo-grupo-la-republica.png", alt="logo")
+							h1 Grupo La República Digital
+							p Jr. Camaná 320 Cercado de Lima
+							p Teléfono: 711-600
+							p (Central Telefónica)
+							span todos los derechos reservados-2015
+						.col-sm-3
+							ul
+								+nav("#","Roger Federer")
+								+nav("#","SBS")
+								+nav("#","Scarlett Johansson")
+								+nav("#","Scotiabank")
+								+nav("#","Selena Gómez")
+								+nav("#","Spiderman")
+								+nav("#","Sporting Cristal")
+								+nav("#","Sunat")
+								+nav("#","Telefonica del Peru")
+								+nav("#","The Walking Dead")
+								+nav("#","Twitter")
+								+nav("#","Universidad Cesar Vallejo")
+								+nav("#","Universidad San Martin")
+								+nav("#","Universitario de Deportes")
+								+nav("#","Xbox")
+								+nav("#","YouTube")
+								+nav("#","Bayern Múnich")
+								+nav("#","Bayern Munich")
+								+nav("#","BBVA")
+								+nav("#","Xbox")
+								+nav("#","BCP")
+						.col-sm-3
+							ul
+								+nav("#","Al fondo hay sitio")
+								+nav("#","Alejandro Toledo")
+								+nav("#","Alianza Lima")
+								+nav("#","Alianza Lima")
+								+nav("#","Banco de la Nación")
+								+nav("#","Barack Obama")
+								+nav("#","Universidad Cesar")
+								+nav("#","Vallejo")
+								+nav("#","Universidad San Martin")
+								+nav("#","Barcelona")
+								+nav("#","Bayern Múnich")
+								+nav("#","Bayern Munich")
+								+nav("#","BBVA")
+								+nav("#","Xbox")
+								+nav("#","BCP")
+								+nav("#","Batman")
+								+nav("#","Bayern Múnich")
+								+nav("#","Bayern Munich")
+								+nav("#","BBVA")
+								+nav("#","Xbox")
+								+nav("#","BCP")
+						.col-sm-3
+							ul
+								+nav("#","One Direction")
+								+nav("#","ONPE")
+								+nav("#","Pablo Escobar")
+								+nav("#","Paolo Guerrero")
+								+nav("#","Pensión 65")
+								+nav("#","PNP")
+								+nav("#","Pensión dólar")
+								+nav("#","Universidad Cesar Vallejo")
+								+nav("#","Universidad San Martin")
+								+nav("#","Premier League")
+								+nav("#","Bayern Múnich")
+								+nav("#","Bayern Munich")
+								+nav("#","BBVA")
+								+nav("#","Xbox")
+								+nav("#","BCP")
+								+nav("#","Proyecto Conga")
+								+nav("#","PUCP")
+								+nav("#","Real Madrid")
+								+nav("#","Redes sociales")
+								+nav("#","Reniec")
+								+nav("#","Robert Pattinson")
+						.col-sm-3
+							ul
+								+nav("#","Al fondo hay sitio")
+								+nav("#","Alejandro Toledo")
+								+nav("#","Alianza Lima")
+								+nav("#","Alianza Lima")
+								+nav("#","Banco de la Nación")
+								+nav("#","Barack Obama")
+								+nav("#","Universidad Cesar")
+								+nav("#","Vallejo")
+								+nav("#","Bayern Múnich")
+								+nav("#","Bayern Munich")
+								+nav("#","BBVA")
+								+nav("#","Xbox")
+								+nav("#","BCP")
+								+nav("#","Universidad San Martin")
+								+nav("#","Barcelona")
+								+nav("#","Batman")
+								+nav("#","Bayern Múnich")
+								+nav("#","Bayern Munich")
+								+nav("#","BBVA")
+								+nav("#","Xbox")
+								+nav("#","BCP")

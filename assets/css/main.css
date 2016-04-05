@@ -1,4 +1,4 @@
-.estimg, .publi .banner-top, #centro .banner-left {
+.estimg, .publi .banner-top, #centro .banner-left, #centro .container .row .logo {
   background: url(../../assets/image/banner_top.jpg) no-repeat;
   background-size: cover;
   width: 100%;
@@ -10,6 +10,19 @@
   padding-top: 0px;
   padding-left: 5px;
   display: inline; }
+
+.style-let, #centro .container .row .domingo span {
+  font-size: 1em;
+  padding: 2px;
+  background-color: #941010;
+  color: white;
+  font-weight: bolder; }
+
+.mt, #centro .banner-left, #centro .banner-right {
+  margin-top: 100%; }
+
+.margin, #centro .container .row .domingo, #centro .container .row .corrupcion {
+  border: 1px solid #E2E2E2; }
 
 .colores, .navbar .navbar-nav li a {
   font-size: 1em; }
@@ -40,9 +53,101 @@
   background: url(../../assets/image/publicidad1.png) no-repeat;
   background-size: 100%;
   height: 580px; }
+#centro .container .row .logo {
+  background: url(../../assets/image/logo-la-republica.jpg) no-repeat; }
+#centro .container .row .domingo {
+  border-bottom: 3px #941010 solid;
+  padding: 4% 2%;
+  position: absolute; }
+  #centro .container .row .domingo span {
+    position: relative;
+    bottom: 20px; }
+  #centro .container .row .domingo p {
+    font-size: 0.8em;
+    font-weight: bolder; }
+#centro .container .row .corrupcion {
+  position: absolute;
+  width: 80%;
+  padding: 2%;
+  margin-left: 8%;
+  border-radius: 20px; }
+  #centro .container .row .corrupcion .edit {
+    position: absolute;
+    height: 70px;
+    left: -5px;
+    top: 0px; }
+  #centro .container .row .corrupcion h4 {
+    font-size: 0.86em;
+    font-weight: bolder;
+    text-align: center; }
+  #centro .container .row .corrupcion img {
+    position: absolute;
+    left: 275px;
+    bottom: 5px; }
+#centro .container .nav-justified {
+  border-radius: 10px;
+  background: #BA1414;
+  padding: 1%; }
+  #centro .container .nav-justified li a {
+    font-size: 9px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none; }
+#centro .container .nav.nav-pills {
+  background: #E4E7EA;
+  padding-left: 150px;
+  border-radius: 10px; }
+  #centro .container .nav.nav-pills span {
+    background: black;
+    color: white;
+    padding: 1.2%;
+    font-size: 10px;
+    position: relative;
+    right: 750px;
+    top: 5px; }
+  #centro .container .nav.nav-pills li a {
+    color: black;
+    font-size: 10px;
+    margin-left: 10px; }
 #centro .banner-right {
   background: url(../../assets/image/publicidad2.png) no-repeat;
   background-size: 100%;
   height: 580px; }
+
+#foot {
+  background: #E3E3E3;
+  margin-top: 4%;
+  padding-top: 5%; }
+  #foot .container .row .col-sm-4 img {
+    padding-top: 40%; }
+  #foot .container .row .col-sm-4 h1 {
+    font-size: 15px; }
+  #foot .container .row .col-sm-4 p {
+    font-size: 12px; }
+  #foot .container .row .col-sm-4 span {
+    font-size: 11px; }
+  #foot .container .row .col-sm-3 ul li {
+    list-style: none; }
+    #foot .container .row .col-sm-3 ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 10px; }
+
+#mensaje h1 {
+  font-weight: bolder; }
+#mensaje .caja {
+  margin: 0px 15%; }
+  #mensaje .caja form input {
+    margin: 3% 0; }
+  #mensaje .caja .radio label p {
+    position: relative;
+    left: 400px;
+    bottom: 0px; }
+  #mensaje .caja textarea {
+    height: 200px;
+    width: 100%; }
+  #mensaje .caja img {
+    position: relative;
+    left: 250px; }
 
 /*# sourceMappingURL=main.css.map */

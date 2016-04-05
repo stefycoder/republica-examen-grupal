@@ -1,0 +1,30 @@
+#mensaje{
+	h1{
+		font-weight: $pesado;
+	}
+	.caja{
+		margin:0px 15%;
+		form{
+			input{
+				margin:3% 0;
+			}
+		}
+			.radio{
+				label{
+					p{
+						position: relative;
+						left: 400px;
+						bottom: 0px;
+					}
+				}
+			}
+			textarea{
+				height: 200px;
+				width: 100%;
+			}
+			img{
+				position:relative;
+				left:250px;
+			}
+	}
+}

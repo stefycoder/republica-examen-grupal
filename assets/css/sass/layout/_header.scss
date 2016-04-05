@@ -1,3 +1,9 @@
+$pesado:bolder;
+$alto:580px;
+$size:100%;
+$plomoclaro:#E2E2E2;
+$guinda:#941010;
+$editorial:#2C3238;
 .estimg{
 	background:url(../../assets/image/banner_top.jpg)no-repeat;
 	background-size: cover;
@@ -11,8 +17,19 @@
 	padding-left: 5px;
 	display: inline;
 }
-$alto:580px;
-$size:100%;
+.style-let{
+	font-size:1em;
+	padding:2px;
+	background-color:$guinda;
+	color:white;
+	font-weight: $pesado;
+}
+.mt{
+	margin-top:100%;
+}
+.margin{
+	border:1px solid $plomoclaro;
+}
 .colores{
 	font-size: 1em;
 }
@@ -66,10 +83,93 @@ $size:100%;
 		background:url(../../assets/image/publicidad1.png)no-repeat;
 		background-size: $size;
 		height: $alto;
+		@extend .mt;
+	}
+	.container{
+		.row{
+			.logo{
+				@extend .estimg;
+				background:url(../../assets/image/logo-la-republica.jpg)no-repeat;
+			}
+			.domingo{
+				@extend .margin;
+				border-bottom: 3px $guinda solid;
+				padding: 4% 2%;
+				position:absolute;
+				span{
+					@extend .style-let;
+					position: relative;
+					bottom:20px;
+				}
+				p{
+					font-size:0.8em;
+					font-weight: $pesado;
+				}
+			}
+			.corrupcion{
+				@extend .margin;
+				position:absolute;
+				width:80%;
+				padding:2%;
+				margin-left: 8%;
+				border-radius:20px;
+				.edit{
+					position:absolute;
+					height:70px;
+					left:-5px;
+					top:0px;
+				}
+				h4{
+					font-size: 0.86em;
+					font-weight: $pesado;
+					text-align: center;
+				}
+				img{
+					position:absolute;
+					left:275px;
+					bottom:5px;
+				}
+			}
+		}
+		.nav-justified{
+			border-radius: 10px;
+			background: #BA1414;
+			padding: 1%;
+				li{
+					a{
+						font-size: 9px;
+						color:white;
+						font-weight: $pesado;
+						text-decoration: none;
+					}
+				}
+			}
+		.nav.nav-pills{
+			background: #E4E7EA;
+			padding-left: 150px;
+			border-radius: 10px;
+			span{
+				background:black;
+				color:white;
+				padding:1.2%;
+				font-size: 10px;
+				position:relative;
+				right:750px;
+				top: 5px;
+			}
+			li{
+				a{
+					color:black;
+					font-size: 10px;
+					margin-left: 10px;
+				}
+			}
+		}
 	}
 	.banner-right{
 		background:url(../../assets/image/publicidad2.png)no-repeat;
 		background-size: $size;
 		height: $alto;
+		@extend .mt;
 	}
 }

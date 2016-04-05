@@ -14,7 +14,7 @@ html(lang='es-PE')
 			link(rel='stylesheet', type='text/css', href='assets/css/main.css')
 		mixin navegador(url,texto)
 			li
-				a(href=url) #{texto}
+				a(href="") #{texto}
 		mixin iconos(clase)
 			li
 				a(href="" class=clase)
@@ -43,24 +43,57 @@ html(lang='es-PE')
 				.col-sm-2
 					.banner-left
 				.col-sm-12
-					block contenido
 					.container
-						//  The justified navigation menu is meant for single line per list item.   Multiple lines will require custom code not provided by Bootstrap.
-						nav
-								ul.nav.nav-justified
-									+navegador("#", "POLÍTICA")
-									+navegador("#", "ECONOMÍA")
-									+navegador("#", "SOCIEDAD")
-									+navegador("#", "ELECC. REGIONALES")
-									+navegador("#", "DEPORTES")
-									+navegador("#", "CHAMPIONS L.")
-									+navegador("#", "ESPECTÁCULOS")
-									+navegador("#", "ED.IMPRESA")
-									+navegador("#", "REGIONALES")
-									+navegador("#", "MÁS SECCIONES")
+						.row
+							.col-md-5
+								.logo
+							.col-md-5
+								.domingo.text-center
+									span DOMINGO
+									p HABLA LA LIDERESA DEL NACIONALISMO
+							.col-md-6
+								.corrupcion.text-center
+									img.edit(src="./assets/image/img_editorial_text.jpg", alt="")
+									h4 La corrupción, los origenes
+									span Por: Gustavo mohme llona
+									img.pull-right(src="./assets/image/img_author.jpg", alt="")
+						ul.nav-justified
+							+navegador("#", "POLÍTICA")
+							+navegador("#", "ECONOMÍA")
+							+navegador("#", "SOCIEDAD")
+							+navegador("#", "ELECC. REGIONALES")
+							+navegador("#", "DEPORTES")
+							+navegador("#", "CHAMPIONS L.")
+							+navegador("#", "ESPECTÁCULOS")
+							+navegador("#", "ED.IMPRESA") 
+							+navegador("#", "REGIONALES") 
+							+navegador("#", "MÁS SECCIONES")
+									span.caret
+								ul.dropdown-menu(aria-labelledby="dropdownMenu1")
+									li
+										a(href="blogs.html") Blogs
+										a(href="columnistas.html") Columnistas
+										a(href="contacto.html") Contacto
+										a(href="index.html") Index
+						.nav.nav-pills
+							span TEMAS DEL DIA
+							+navegador("#", "Globos de oro")
+								img(src="./assets/image/bullet.gif", alt="")
+							+navegador("#", "Youtube")
+								img(src="./assets/image/bullet.gif", alt="")
+							+navegador("#", "PNP")
+								img(src="./assets/image/bullet.gif", alt="")
+							+navegador("#", "Charlie Hebdo")
+								img(src="./assets/image/bullet.gif", alt="") 
+							+navegador("#", "FC Barcelona")
+								img(src="./assets/image/bullet.gif", alt="")
+							+navegador("#", "Alianza Lima")
+								img(src="./assets/image/bullet.gif", alt="")
+							+navegador("#", "Balón")
+
+						block contenido
 				.col-sm-2
 					.banner-right
-
 			script(src='http://code.jquery.com/jquery-1.11.2.min.js')
 			script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
 			script(type='text/javascript', src='js/bootstrap.min.js')
