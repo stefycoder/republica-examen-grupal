@@ -365,7 +365,7 @@
   width: 100%;
   height: 600px; }
 
-#portada .col-md-16
+#portada .col-md-12
 .col-md-8 .imagen {
   padding: 41% 4%;
   width: 100%;
@@ -374,7 +374,7 @@
   background-repeat: no-repeat;
   background-position: normal;
   margin-bottom: 5%; }
-  #portada .col-md-16
+  #portada .col-md-12
   .col-md-8 .imagen h3 {
     position: relative;
     bottom: -160px;
@@ -383,7 +383,7 @@
     font-weight: bold;
     font-size: 28px;
     color: white; }
-#portada .col-md-16
+#portada .col-md-12
 .col-md-8 .imagen1 {
   padding: 15.6% 4%;
   width: 100%;
@@ -392,7 +392,7 @@
   background-repeat: no-repeat;
   background-position: normal;
   margin-bottom: 5%; }
-  #portada .col-md-16
+  #portada .col-md-12
   .col-md-8 .imagen1 h4 {
     position: relative;
     bottom: -70px;
@@ -411,7 +411,7 @@
   font-weight: bold; }
 #encabezado p {
   font-weight: bold; }
-#encabezado .col-md-5 .img-principal {
+#encabezado .col-md-4 .img-principal {
   padding: 18.6% 4%;
   width: 100%;
   background-image: url("../../assets/image/img_especiales.jpg");
@@ -419,13 +419,13 @@
   background-repeat: no-repeat;
   background-position: normal;
   margin-bottom: 5%; }
-  #encabezado .col-md-5 .img-principal p {
+  #encabezado .col-md-4 .img-principal p {
     color: white;
     font-weight: bold;
     text-align: left;
     position: relative;
     bottom: -50px; }
-#encabezado .col-md-5 .img-principal-pr {
+#encabezado .col-md-4 .img-principal-pr {
   padding: 14.6% 4%;
   width: 100%;
   background-image: url("../../assets/image/img_especiales_aside.jpg");
@@ -433,7 +433,7 @@
   background-repeat: no-repeat;
   background-position: normal;
   margin-bottom: 5%; }
-  #encabezado .col-md-5 .img-principal-pr p {
+  #encabezado .col-md-4 .img-principal-pr p {
     color: white;
     font-weight: bold;
     text-align: left;
@@ -1045,9 +1045,7 @@
     background-color: #B10002;
     color: white; }
 #columnistas img {
-  border: 5px solid white;
-  padding-left: 25%;
-  padding-right: 25%; }
+  border: 5px solid white; }
 #columnistas .gray {
   background-color: #F2F2F2;
   padding-top: 2%;
